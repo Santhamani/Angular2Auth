@@ -1,0 +1,30 @@
+ul{
+    list-style-type: none;
+    margin-top: 70%;
+}
+li a{
+    text-decoration: none;
+    
+}
+li{
+    padding-top:8%;
+}
+p{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.new{
+    margin-top: 3%;
+}
+#search{
+    float: right;
+    margin-right: 30px;
+    width: 150px;
+}
+#margin{
+    padding-left: 5%;
+}
+h2{
+    margin-left: 3%;
+}
+

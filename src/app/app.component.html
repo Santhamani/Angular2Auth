@@ -1,0 +1,218 @@
+<!-- <div class="container-fluid"> -->
+<!-- <div class="col-xs-6 col-md-12 col-sm-12 col-lg-12"> -->
+<nav class="navbar sticky-top navbar-expand-md" id="menu">
+  <!-- Brand -->
+  <a class="navbar-brand" href="/" id="tex">
+    Devotee World</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse devotee" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item icon">
+        <a class="nav-link" routerLink="/astroservices"><img src="assets/images/astros.png" class="head" > <span class="icon" id="tex">Astro Services</span></a>
+      </li>
+      
+      <li class="nav-item  icon">
+        <a class="nav-link" routerLink="/poojaservices">   <img src="assets/images/astro.png"><span class="icon" id="tex">Pooja Services</span></a>
+      </li>
+      <li class="nav-item icon">
+        <a class="nav-link" routerLink="/devoteeshop">   <img  src="assets/images/shop.png"><span class="icon" id="tex" >Devotee Shop</span></a>
+			</li> 
+			<li class="nav-item icon ">
+        <a class="nav-link" routerLink="/talktoastrologers">   <img src="assets/images/phn.png"><span class="icon" id="tex" >Talk to Astrologer</span></a>
+			</li> 
+			<li class="nav-item icon">
+        <a class="nav-link" routerLink="/piligrimages">   <img src="assets/images/pil.png"><span class="icon" id="tex">Piligrimages</span></a>
+			</li> 
+			<li class="nav-item icon">
+        <a class="nav-link" routerLink="/onlinecourses">   <img src="assets/images/class.png"><span class="icon" id="tex">Online Courses</span></a>
+      </li> 
+      <li class="nav-item icon">
+        <a class="nav-link" routerLink="/login">   <img src="assets/images/login.png"><span class="icon" id="tex">Login</span></a>
+      </li> 
+
+<!-- <div class="container" id="mod">
+    <li class="nav-item icon">
+        <a class="nav-link" data-toggle="modal" data-target="#myModal" routerLink="/login">  
+           <img src="assets/images/login.png"><span class="icon" id="tex">Login</span></a>
+      </li> 
+
+  
+</div>
+ -->
+  
+
+       
+    </ul>
+  </div> 
+</nav>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          
+
+              <h2 style="padding-left: 130px;">Login form</h2>
+              
+              <form style="padding-top: 20px;">
+                <div class="form-group">
+                  <label for="email">Email :</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password :</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Remember me
+                  </label>
+                </div>
+                <button type="button" class="btn btn-success" style="background-color: green; color: white;">Log In</button>
+              </form>
+
+
+              <p class="mt-4 social-login text-center">
+                <!-- <a href="#" class="btn btn-twitter"><em class="ion-social-twitter"></em></a> -->
+                <button (click)="signIn('facebook')" class="btn btn-facebook"><em class="ion-social-facebook"></em></button>
+                <!-- <button href="#" class="btn btn-linkedin"><em class="ion-social-linkedin"></em></button> -->
+                <button (click)="signIn('google')" class="btn btn-google"><em class="ion-social-googleplus"></em></button>
+                <!-- <a href="#" class="btn btn-github"><em class="ion-social-github"></em></a> -->
+            </p>
+            <p class="text-center">
+                Don't have an account yet? <a href="#">Sign Up Now</a>
+            </p>
+              
+              
+              
+              
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-offset-4 col-lg-offset-4 col-md-4 col-lg-4">
+                    <button id='modal-launcher' class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login-modal">
+                      Please sign In
+                    </button>
+                  </div>	
+                </div>
+              </div>
+          
+          <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header login_modal_header">
+                      <button type="button"  data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h2 class="modal-title" id="myModalLabel">Login to Your Account</h2>
+                    </div>
+                    <div class="modal-body login-modal">
+                      <br/>
+                      <div class="clearfix"></div>
+                      <div id='social-icons-conatainer'>
+                        <div class='modal-body-left'>
+                          <div class="form-group">
+                                <input type="text" id="username" placeholder="Enter your name" value="" class="form-control login-field">
+                                <i class="fa fa-user login-field-icon"></i>
+                            </div>
+          
+                            <div class="form-group">
+                                <input type="password" id="login-pass" placeholder="Password" value="" class="form-control login-field">
+                                <i class="fa fa-lock login-field-icon"></i>
+                            </div>
+          
+                            <a href="#" class="btn btn-success modal-login-btn">Login</a>
+                            <a href="#" class="login-link text-center">Lost your password?</a>
+                        </div>
+          
+                        <div class='modal-body-right'>
+                          <div class="modal-social-icons">
+                            <a href='#' class="btn btn-default facebook"> <i class="fa fa-facebook modal-icons"></i> Sign In with Facebook </a>
+                            <a href='#' class="btn btn-default twitter"> <i class="fa fa-twitter modal-icons"></i> Sign In with Twitter </a>
+                            <a href='#' class="btn btn-default google"> <i class="fa fa-google-plus modal-icons"></i> Sign In with Google </a>
+                            <a href='#' class="btn btn-default linkedin"> <i class="fa fa-linkedin modal-icons"></i> Sign In with Linkedin </a>
+                          </div> 
+                        </div>	
+                        <!-- <div id='center-line'  > OR </div> -->
+                      </div>																												
+                      <div class="clearfix"></div>
+          
+                      <div class="form-group modal-register-btn">
+                        <button class="btn btn-default"> New User Please Register</button>
+                      </div>
+                      
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="modal-footer login_modal_footer">
+                    </div>
+                </div>
+              </div>
+          </div>
+              
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+<!-- </div> -->
+<!-- </div> -->
+  <!-- Navbar end -->
+  <router-outlet></router-outlet>
+  
+ <!-- footer    -->
+
+
+ <div class="container-fluid sra">
+  <div class="container">
+     
+      
+     
+      <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+          <p class="lap">
+            <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></p>
+      <p class="lap">
+          <i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i></p>
+
+        </div>  
+      </div>
+
+
+      
+      <div class="row" id="bak" id="mac">
+          <div class="col-md-4">
+              <p><i class="fa fa-envelope" id="mac" aria-hidden="true"></i>info@devoteeworld.com</p>
+          </div>
+
+          <div class="col-md-4">
+              <p><i class="fa fa-phone" id="mac" aria-hidden="true"></i>+91-9564586356</p>
+          </div>
+
+          <div class="col-md-4">
+              <p><i class="fa fa-home" id="mac" aria-hidden="true"></i>Vijayawada</p>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-5"></div>
+          <div class="col-md-2">
+              
+              <footer class="row h-100 justify-content-center">All&nbsp;&#169;&nbsp;rights&nbsp;are&nbsp;Reserved&nbsp;@Lakshya.</footer>
+          
+          </div>
+          <div class="col-md-5"></div>
+      </div>
+
+  </div>
+</div>
+
+
+<!-- <app-vasthu></app-vasthu> -->
+ 

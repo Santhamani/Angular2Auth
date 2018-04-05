@@ -1,0 +1,32 @@
+ul{
+    list-style-type: none;
+    /* padding-top: 50%; */
+}
+li a{
+    text-decoration: none;    
+}
+li{
+    padding: 5px;
+}
+p{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.new{
+    margin-top: 3%;
+}
+#search{
+    float: right;
+    margin-right: 30px;
+    /* width: 200px; */
+    padding-top: 18px;
+}
+#margin{
+    padding-left: 9%;
+}
+h2{
+    margin-left: 3%;
+}
+#abc{
+    margin-top: 15px;
+}

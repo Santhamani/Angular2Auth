@@ -1,0 +1,84 @@
+  /* Carousel */
+  
+   .slide-image  {
+      padding: 0 7%;
+    }
+    .wrapper {
+      width: 900px;
+    }
+    .item {
+      pointer-events: none;
+      min-width: 370px;
+      min-height: 300px;
+      margin: 0 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* transition: 0.6s ease-in-out left; */
+      
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+ 
+    .selected-item {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .selected-item-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @media only screen and (max-width: 476px) {
+      .wrapper {
+      }          width: 100%;
+
+      .card{
+        margin: 60px;
+      }
+  }
+
+
+    /* cards */
+    /* @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css); */
+    @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+   
+
+
+    
+    /* Demo purposes only */
+    /* body {
+      background-color: #212121;
+    } */
+
+#zod{
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+#zod1{
+  margin-top: 50px;
+  
+}
+
+.new{
+  margin-top: 3%;
+}
+
+#font{
+ color:black;
+ 
+}
+.carousel-item{
+  width: 100%;
+
+}
+.imgc{
+  /* width: 100%; */
+}
+#demo{
+  padding-top: 50px;
+}
